@@ -4,11 +4,19 @@ body {
     margin:0;
     height:100%;
 }
-#topBar > * {
+#topBar > button {
     background:none;
     border:none;
     padding:0;
     cursor:pointer;
     font:inherit;
-    color:blue;
+    color:white;
+    transition-duration: 250ms;
+}
+#topBar {
+    color: white;
+}
+#topBar > button:hover {
+    background-color: gray;
+    transition-duration: 250ms;
 }
