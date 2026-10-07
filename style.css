@@ -1,0 +1,14 @@
+body {
+    color:black;
+    background-color: black;
+    margin:0;
+    height:100%;
+}
+#topBar > * {
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    font:inherit;
+    color:blue;
+}
