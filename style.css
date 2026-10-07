@@ -1,5 +1,5 @@
 body {
-    color:black;
+    color:white;
     background-color: black;
     margin:0;
     height:100%;
@@ -15,8 +15,22 @@ body {
 }
 #topBar {
     color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    gap:100px;
+}
+#topBar > * {
+    display:auto;
 }
 #topBar > button:hover {
     background-color: gray;
     transition-duration: 250ms;
+}
+#sideBarLeft {
+    border:white;
+
+}
+#mainBody {
+    display:flex;
 }

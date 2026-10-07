@@ -10,5 +10,4 @@ function insertScript(id){
     }
     document.body.appendChild(src);
 }
-insertScript('scriptFolder/testFunction.js');
-insertScript('scriptFolder/testFunction2.js');
+insertScript('scriptFolder/basicFunctions.js');
