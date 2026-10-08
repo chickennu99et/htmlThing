@@ -4,10 +4,15 @@ class captainLogger
     {
         this.maxLog = maxLogg;
         this.logTexts = ["Welcome Aboard Captain, log boot complete"];
+        this.onChange = null;
     }
     addLog(message="error, message failure")
     {
         this.logTexts.push(message);
+        if(this.onChange)
+        {
+            this.onChange();
+        }
     }
     logFix()
     {
@@ -17,9 +22,9 @@ class captainLogger
         }
     }
     getAsPId(){
-        logFix();
+        this.logFix();
         let x = "";
-        for(let i = this.logTexts.length-1; i>=0; i++)
+        for(let i = this.logTexts.length-1; i>=0; i--)
         {
             x+="<p>" + this.logTexts[i] + "</p>";
         }
