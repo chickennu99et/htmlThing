@@ -18,6 +18,7 @@ async function start()
 {
     await insertScript('scriptFolder/basicFunctions.js');
     await insertScript('scriptFolder/captainsLog.js');
+    await insertScript('scriptFolder/tabHandler.js');
     
     logHandler = new captainLogger();
     logHandler.onChange = TriggerLog;

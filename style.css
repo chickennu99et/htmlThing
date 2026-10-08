@@ -49,3 +49,7 @@ body {
     width:100%;
     height:100%;
 }
+#topbar .tab.active {
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+}

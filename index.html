@@ -11,26 +11,26 @@
             </div>
             <div id="controlPanelBody">
                 <div id="topBar">
-                    <button id="topBar" onclick="AFFU()">Main Controls</button> |
-                    <button id="topBar" onclick="AFFU()">Resource Monitor</button> |
-                    <button id="topBar" onclick="AFFU()">Ship Data</button> |
-                    <button id="topBar" onclick="AFFU()">Internal Operations</button> |
-                    <button id="topBar" onclick="AFFU()">Map and Tasks</button> 
+                    <button onclick="switchTo('MCD',this)" class="tab active">Main Controls</button> |
+                    <button onclick="switchTo('RMD',this)" class="tab">Resource Monitor</button> |
+                    <button onclick="switchTo('SDD',this)" class="tab">Ship Data</button> |
+                    <button onclick="switchTo('IOD',this)" class="tab">Internal Operations</button> |
+                    <button onclick="switchTo('MTD',this)" class="tab">Map and Tasks</button> 
                 </div>
                 <div id="currentTopBarState">
-                    <div id="MainControlsDiv">
+                    <div id="MCD" class="panel">
                         Loading...
                     </div>
-                    <div id="ResourceMonitorDiv">
+                    <div id="RMD" class="panel" hidden>
+                        Loading...e
+                    </div>
+                    <div id="SDD" class="panel" hidden>
                         Loading...
                     </div>
-                    <div id="ShipDataDiv">
+                    <div id="IOD" class="panel" hidden>
                         Loading...
                     </div>
-                    <div id="InternalOperationsDiv">
-                        Loading...
-                    </div>
-                    <div id="MapAndTasksDiv">
+                    <div id="MTD" class="panel" hidden>
                         Loading...
                     </div>
                 </div>
