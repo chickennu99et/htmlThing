@@ -6,8 +6,9 @@ body {
 }
 #topBar > button {
     background:none;
-    border:none;
     padding:0;
+    border:1px solid white;
+    border-radius: 6px;
     cursor:pointer;
     font:inherit;
     color:white;
@@ -18,10 +19,18 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x:auto;
-    gap:100px;
+    gap:12px;
+    width:100%;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 #topBar > * {
     display:auto;
+    flex: 0 0 auto;
+    width:auto;
 }
 #topBar > button:hover {
     background-color: gray;
@@ -29,8 +38,14 @@ body {
 }
 #sideBarLeft {
     border:white;
-
+    width:19%;
 }
 #mainBody {
     display:flex;
+    width:100%;
+    height:100%;
+}
+#controlPanelBody {
+    width:100%;
+    height:100%;
 }

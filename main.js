@@ -11,3 +11,22 @@ function insertScript(id){
     document.body.appendChild(src);
 }
 insertScript('scriptFolder/basicFunctions.js');
+insertScript('scriptFolder/captainsLog.js');
+
+var logHandler = new captainLogger();
+
+async function logCall() 
+{
+    alert("e");
+    try{
+        await TriggerLog();
+    }catch (errorLogTrigger){
+        console.error(errorLogTrigger);
+    }
+    setTimeout(logCall, 10000);
+}
+async function TriggerLog()
+{
+    document.getElementById("textContent") = logHandler.getAsPId();
+}
+logCall();
