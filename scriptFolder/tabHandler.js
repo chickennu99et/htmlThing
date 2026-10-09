@@ -1,4 +1,4 @@
-let currentPanel = "MCD"
+let currentPanel = "MCD";
 function switchTo(Id)
 {
     document.getElementById(currentPanel).hidden=true;

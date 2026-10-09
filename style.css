@@ -48,6 +48,7 @@ body {
 #controlPanelBody {
     width:100%;
     height:100%;
+    margin-left: 5%;
 }
 #topbar .tab.active {
     font-weight: bold;
